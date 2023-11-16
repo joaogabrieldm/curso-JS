@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Multas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    <p>Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h <input type="button" value="Verificar" id="verify"></p>
+    <div id="res"></div>
+
+    <script>
+        var but = document.querySelector('input#verify')
+        but.addEventListener('click', verificar)
+
+        function verificar() {
+            var num = document.querySelector('input#txtvel')
+            var vel = Number(num.value)
+            var resposta = document.querySelector('div#res')
+
+            resposta.innerHTML = `<p>Sua velocidade é de ${vel}Km/h</p>`
+            
+            if (vel > 50) {
+                resposta.innerHTML += '<p>Você está <strong>MULTADO</strong> por excesso de velocidade</p>'
+            }
+            resposta.innerHTML += 'Use sempre o <strong>Sinto de Seguraça</strong>'
+        } 
+    </script>
+</body>
+</html>
