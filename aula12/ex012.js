@@ -1,4 +1,4 @@
-var horario = 19
+var horario = new Date().getHours()
 
 console.log(`Agora são ${horario} horas`)
 
