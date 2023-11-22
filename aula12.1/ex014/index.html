@@ -6,16 +6,14 @@
     <title>Exercício horário</title>
     <link rel="stylesheet" href="estilo/style.css">
 </head>
-<body>
+<body id="carregar" onload="carregar()">
     <header>
         <h1>Hora do dia</h1>
     </header>
         <section id="filho">
             <div id="res">Resposta</div>
-            <div>
-                <img src="imagens/dia.jpg" alt="dia" id="imgDia">
-                <img src="imagens/tarde (1).jpg" alt="noite" id="imgTarde">
-                <img src="imagens/noite.png" alt="noite" id="imgNoite">
+            <div id="foto">
+                <img  src="imagens/dia.jpg" alt="dia" id="imagem">
             </div>
         </section>
     <footer>
@@ -23,8 +21,23 @@
     </footer>
 
     <script>
-        var resposta = document.querySelector('div#res')
-        var img1 = 
+        var horas = new Date().getHours()
+        var img = document.querySelector('div#foto > img')
+        var res = document.querySelector('div#res')
+        function carregar() {
+            res.innerHTML = `Agora são ${horas} horas`
+
+            if (horas >= 0 && horas <= 12) {
+                img.src = 'imagens/dia.jpg'
+                document.body.style.background = 'lightBlue'
+            } else if (horas > 12 && horas <=18) {
+                img.src = "imagens/tarde (1).jpg"
+                document.body.style.background = 'orange'
+            } else {
+                img.src = "imagens/noite.png"
+                document.body.style.background = 'darkBlue'
+            }
+        }
     </script>
 </body>
 </html>

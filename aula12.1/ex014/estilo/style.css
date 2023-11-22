@@ -40,11 +40,6 @@ div#res {
 img {
     width: 250px;
     border-radius: 50%;
-    display: none;
-}
-
-#imgTarde {
-    display: block;
 }
 
 
