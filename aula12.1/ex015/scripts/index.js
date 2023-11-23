@@ -7,7 +7,7 @@ function verificar() {
     var img = document.querySelector('img#img')
     var res = document.querySelector('div#res')
     
-    if (idade > 500) {
+    if (idade > 500 || idade < 0) {
         res.innerHTML = `Opções inválidas!`
     } else if (idade > 0 && idade <= 15 && sexM) {
         res.innerHTML = `Detectamos um MENINO de ${idade} anos`
