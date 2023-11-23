@@ -11,20 +11,21 @@
         <h1>Verificador de Idade</h1>
     </header>
     <section>
-        <p>Ano de Nascimento <input type="number" name="ano" id="nao"></p>
+        <p>Ano de Nascimento <input type="number" name="ano" id="ano" required></p>
         <div>
             <p>
                 Sexo:
-                <input type="radio" name="radsex" id="masc">
+                <input type="radio" name="radsex" id="masc" checked>
                 <label for="masc">Masculino</label>
                 <input type="radio" name="radsex" id="fem">
                 <label for="fem">Feminino</label>
             </p>
         </div>
         <div id="botao">
-            <input type="submit" value="Verificar" onclick="verificar">
+            <input type="submit" value="Verificar" onclick="verificar()">
         </div>
         <div id="res">Preencha os dados acima para ver o resultado!</div>
+        <img src="" alt="" id="img">
     </section>
     <footer>
         <p> &copy; JoãoGabriel</p>
