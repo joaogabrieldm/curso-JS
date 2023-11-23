@@ -7,7 +7,7 @@ function verificar() {
     var img = document.querySelector('img#img')
     var res = document.querySelector('div#res')
     
-    if (idade > 500 || idade < 0) {
+    if (idade > 500 || idade < 0) { //----------------------- Sexo masculino
         res.innerHTML = `Opções inválidas!`
         document.body.style.background = 'red'
     } else if (idade > 0 && idade <= 15 && sexM) {
@@ -26,7 +26,7 @@ function verificar() {
         res.innerHTML = `Detectamos um SENHOR de ${idade} anos`
         img.src = 'imagens/idoso.jpg'
         document.body.style.background = '#0084ff'
-    }else if (idade > 0 && idade <= 15 && sexF) {
+    }else if (idade > 0 && idade <= 15 && sexF) { //----------------------- Sexo feminino
         res.innerHTML = `Detectamos uma MENINA de ${idade} anos`
         img.src = 'imagens/menina.png'
         document.body.style.background = 'pink'
