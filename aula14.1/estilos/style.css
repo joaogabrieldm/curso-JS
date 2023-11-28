@@ -18,7 +18,7 @@ header {
 }
 
 section {
-    width: 600px;
+    width: 450px;
     min-height: 200px;
     padding: 10px;
     color: black;
@@ -53,4 +53,9 @@ div#but > input {
 div#but > input:hover {
     background-color: #0055a5;
     cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
 }
