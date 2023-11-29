@@ -28,6 +28,10 @@ input[type=submit] {
     width: 130px;
 }
 
+div#res {
+    margin-top: 20px;
+}
+
 footer {
     color: white;
     text-align: center;
