@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #3E82D5;
+}
+
+header {
+    color: white;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+section {
+    background-color: white;
+    margin: auto;
+    width: 600px;
+    min-height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
+}
+
+p {
+    padding: 10px 0px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
